@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Resto#123
+</title>
+<script>
+    function hitungtotal(){
+        var nummakan=7;
+        var numminum=7;
+        var grandtotal=0;
+        var mkn,lbk,mnn,lmk;
+        var i=1;
+        var j=1;
+        for(i=1; i<=nummakan; i++){
+            mkn = "mk" + i;
+            lbk = "lk"+i;
+            grandtotal += parseInt(document.getElementById(lbk).innerHTML) * parseInt(document.getElementById(mkn).value);
+        }
+        for(j=1; j<=numminum; j++){
+            mnn = "mn" + j;
+            lmk = "lm"+j;
+            grandtotal += parseInt(document.getElementById(lmk).innerHTML) * parseInt(document.getElementById(mnn).value);
+        } 
+       
+        document.getElementById("Totalz").value=grandtotal;
+        //alert(grandtotal);
+    }
+</script>
+</head>
+<body>
+    <h3>Menu</h3>
+<form>
+<table>
+    <tr>
+        <th>Makanan</th>
+        <th>Harga (Rp)</th>
+        <th>Pesanan (Porsi)</th>
+    </tr>
+    <tr>
+        <td>Nasi Goreng Ayam</td>
+        <td  style="text-align: right;"><label id="lk1">15000</label></td>
+        <td style="text-align: right;"><input type="number" id="mk1" name="mk1" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Nasi Goreng Telur</td>
+        <td style="text-align: right;"><label id="lk2">12000</label></td>
+        <td style="text-align: right;"><input type="number" id="mk2" name="mk2" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Nasi Goreng Jambal</td>
+        <td style="text-align: right;"><label id="lk3">15000</label></td>
+        <td style="text-align: right;"><input type="number" id="mk3" name="mk3" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Nasi Goreng Seafood</td>
+        <td style="text-align: right;"><label id="lk4">15000</label></td>
+        <td style="text-align: right;"><input type="number" id="mk4" name="mk4" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Nasi Soto Ayam</td>
+        <td style="text-align: right;"><label id="lk5">7000</label></td>
+        <td style="text-align: right;"><input type="number" id="mk5" name="mk5" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Nasi Rawon</td>
+        <td style="text-align: right;"><label id="lk6">9000</label></td>
+        <td style="text-align: right;"><input type="number" id="mk6" name="mk6" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Nasi Sop Konro</td>
+        <td style="text-align: right;"><label id="lk7">20000</label></td>
+        <td style="text-align: right;"><input type="number" id="mk7" name="mk7" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr><td colspan="3">_________________________________</td> </tr>
+    <tr>
+        <th>Minuman</th>
+        <th>Harga (Rp)</th>
+        <th>Pesanan</th>
+    </tr>
+    <tr>
+        <td>Teh Tawar</td>
+        <td style="text-align: right;"><label id="lm1">2000</label></td>
+        <td style="text-align: right;"><input type="number" id="mn1" name="mn1" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Es Teh Tawar</td>
+        <td style="text-align: right;"><label id="lm2">2500</label></td>
+        <td style="text-align: right;"><input type="number" id="mn2" name="mn2" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Teh Manis</td>
+        <td style="text-align: right;"><label id="lm3">3000</label></td>
+        <td style="text-align: right;"><input type="number" id="mn3" name="mn3" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Es Teh Manis</td>
+        <td style="text-align: right;"><label id="lm4">3500</label></td>
+        <td style="text-align: right;"><input type="number" id="mn4" name="mn4" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Jeruk Panas</td>
+        <td style="text-align: right;"><label id="lm5">3500</label></td>
+        <td style="text-align: right;"><input type="number" id="mn5" name="mn5" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Es Jeruk</td>
+        <td style="text-align: right;"><label id="lm6">4000</label></td>
+        <td style="text-align: right;"><input type="number" id="mn6" name="mn6" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr>
+        <td>Es Teh Tarik</td>
+        <td style="text-align: right;"><label id="lm7">6000</label></td>
+        <td style="text-align: right;"><input type="number" id="mn7" name="mn7" min="0" max="100" step="1" value="0" onchange="hitungtotal()"></td>
+    </tr>
+    <tr><td colspan="3" style="text-align: right;">________________</td> </tr>
+    <tr>
+        <tr>
+            <td colspan="2" style="text-align: right;"><b>Total Rp. </b></td>
+            <td style="text-align: right;"><input type="number" id="Totalz" name="Totalz" value="0" disabled style="text-align: right;"></td>
+        </tr>
+</table>
+</form>
+</body>
+</html>
